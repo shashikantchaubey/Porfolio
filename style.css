@@ -208,8 +208,29 @@ body{
 }
 
 .workeduc-box{
-    background:red;
+    /* background:red; */
+    border-left: var(--border);
 }
+
+.workeduc-box .workeduc-content{
+    position: relative;
+    /* background-color: seagreen; */
+    padding-left: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.workeduc-box .workeduc-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:-0.65rem;
+    width:1.2rem;
+    height:1.2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+
+}
+
 
 .workeduc-content .year{
     color:var(--main-color)
@@ -217,6 +238,26 @@ body{
 
 .workeduc-content .year i{
     margin-right: .4em;
+}
+
+
+
+.number-page{
+    position: absolute;
+    bottom: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nextprev-btn{
+    position:absolute ;
+    bottom: .9rem;
+    right:1.5rem ;
+    width:2rem;
+    height: 2rem;
+    background: seagreen;
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 
